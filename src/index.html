@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entropy - Tsintsinis Matthaios 21009</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form action="">
+      <span id="rangeValue">2 decimals</span>
+      <Input id="rangeSlider" class="range" type="range" name "" value="2" min="0" max="15" onChange="rangeSlide(this.value)" onmousemove="rangeSlideMove(this.value)"></Input>
+    </div>
+
+      <script type="text/javascript">
+        function rangeSlideMove(value) {
+          document.getElementById('rangeValue').innerHTML = value;
+        }
+
+
+        function rangeSlide(value) {
+          document.getElementById('rangeValue').innerHTML = value;
+          start();
+        }
+      </script>
+
+
+    <label id="fileDisplayArea">Upload your TEXT file here.</label>
+    <hr />
+    <input type="file" accept=".txt" id="fileInput" />
+    <button id="clickMe">Find H</button>
+    </form>
+
+    <div class="calculations">
+      <div id="gridContainer">
+        <div class="grid-title">Key</div>
+        <div class="grid-title">Probability</div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
